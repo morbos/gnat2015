@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+
+<gprconfig>
+  <configuration>
+   <config>
+
+   type Loaders is ("ROM", "RAM", "USER");
+
+   Loader : Loaders := external ("LOADER", "ROM");
+
+   type Boards is ("RM57-LAUNCHPAD");
+
+   Board : Boards := external ("BOARD", "RM57-LAUNCHPAD");
+
+   package Compiler is
+      Common_Required_Switches := ("-mlittle-endian", "-mfpu=vfpv3-d16", "-mhard-float",
+        "-mcpu=cortex-r4");
+
+      for Leading_Required_Switches ("Ada") use
+         Compiler'Leading_Required_Switches ("Ada") &amp;
+         Common_Required_Switches;
+
+      for Leading_Required_Switches ("C") use
+         Compiler'Leading_Required_Switches ("C") &amp;
+         Common_Required_Switches;
+
+      for Leading_Required_Switches ("Asm_Cpp") use
+         ("-c", "-mfpu=vfpv3-d16", "-mhard-float", "-mcpu=cortex-r4" );
+   end Compiler;
+
+   package Linker is
+      for Required_Switches use Linker'Required_Switches &amp;
+        ("-L${RUNTIME_DIR(ada)}/adalib", "-lgnat") &amp;
+        Compiler.Common_Required_Switches &amp;
+        ("-nostdlib", "-lgcc");
+
+      for Required_Switches use Linker'Required_Switches &amp;
+      ("-L", "${RUNTIME_DIR(ada)}/arch/", "-T", Board &amp; "-memory-map.ld",
+       "-T", "common-" &amp; Loader &amp; ".ld");
+
+   end Linker;
+
+
+   </config>
+  </configuration>
+</gprconfig>
