@@ -33,7 +33,7 @@ For the sfp lib the build is as so:
 % cd gnat2015/hercules/RM57/example
 % make
 
-There will be a build.out that UniFlash can program.
+There will be a demo.out in the obj dir that UniFlash can program.
 
 7) Connect a UART and observe the output (also the LEDs will be
 toggling).
@@ -63,32 +63,60 @@ g) You should be able to start openocd and see the target
 openocd --file ti_rm57launchpad.cfg
 
 root@bplus:~/openocd-0.9.0/tcl# ../src/openocd --file
+
 board/ti_rm57launchpad.cfg
+
 Open On-Chip Debugger 0.9.0 (2015-05-31-20:38)
+
 Licensed under GNU GPL v2
+
 For bug reports, read
+
         http://openocd.org/doc/doxygen/bugs.html
+
 adapter speed: 1000 kHz
+
 adapter speed: 1000 kHz
+
 Info : auto-selecting first available session transport "jtag". To
+
 override use       'transport select <transport>'.
+
 Warn : rm57.dap: nonstandard IR mask
+
 force hard breakpoints
+
 trst_only separate trst_push_pull
+
 Info : J-Link ARM V8 compiled Dec  6 2011 18:57:44
+
 Info : J-Link caps 0xb9ff7bbf
+
 Info : J-Link hw version 80000
+
 Info : J-Link hw type J-Link
+
 Info : J-Link max mem block 9440
+
 Info : J-Link configuration
+
 Info : USB-Address: 0x0
+
 Info : Kickstart power on JTAG-pin 19: 0xffffffff
-Info : Vref = 3.384 TCK = 1 TDI = 0 TDO = 0 TMS = 0 SRST = 1 TRST = 1
+
+Info : Vref = 3.384 TCK = 1 TDI = 0 TDO = 0 TMS = 0 SRST = 1 TRST =
+1
+
 Info : J-Link JTAG Interface ready
+
 Info : clock speed 1000 kHz
+
 Info : JTAG tap: rm57.jrc tap/device found: 0x0b95a02f (mfg: 0x017,
+
 part: 0xb95a      , ver: 0x0)
+
 Info : JTAG tap: rm57.dap enabled
+
 Info : rm57.cpu: hardware has 8 breakpoints, 8 watchpoints
 
 
