@@ -1,0 +1,53 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-full-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U sys.mux%b		sys-mux.adb		4fba5718 NE OO PK
+W sys%s			sys.adb			sys.ali
+
+U sys.mux%s		sys-mux.ads		a58a1055 NE OO PR PK
+W interfaces%s		interfac.ads		interfac.ali
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+W system.rm57%s		s-rm57.ads		s-rm57.ali
+
+D interfac.ads		20150623182621 6033a23f interfaces%s
+D sys.ads		20150630174514 07cdead7 sys%s
+D sys-mux.ads		20150630174514 90edd343 sys.mux%s
+D sys-mux.adb		20150630174514 df57845b sys.mux%b
+D system.ads		20150623182822 7a1c5ef5 system%s
+D s-rm57.ads		20150625011810 52998bfe system.rm57%s
+D s-stoele.ads		20150623182638 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150623182606 9d58a4c0 system.unsigned_types%s
+X 1 interfac.ads
+38K9*Interfaces 178e15 3|30w6 30r23
+68M9*Unsigned_32 3|39r23 40r23
+X 2 sys.ads
+1K9*Sys 4e8 3|32r9 44r5 4|31r14 39r5
+X 3 sys-mux.ads
+32K13*Mux 2|1k9 3|44l9 44e12 4|31b18 39l9 39t12
+39m4*KICKER0{1|68M9}
+40m4*KICKER1{1|68M9}
+42U14*Mux_Init 4|33b14 38t7
+X 5 system.ads
+45K9*System 3|28r6 28r23 5|158e11
+X 6 s-rm57.ads
+34K16*RM57 3|28w13 28r30 6|438e16
+

@@ -1,0 +1,29 @@
+[GENERATED OBJECT FILE]
+b__demo.o
+[PROJECT FILES]
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/example_sfp.gpr
+20150630183443
+[BOUND OBJECT FILES]
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys-flash.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys-mux.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys-periph.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys-pll.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/gioports.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/driver.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/last_chance_handler.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/demo.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/sys-vim.o
+/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/init.o
+[GENERATED SOURCE FILES]
+b__demo.ads
+b__demo.adb
+b__demo.ali
+[RESULTING OPTIONS]
+-L/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/
+-L/rnasbkup/gnat2015/hercules/RM57/example_sfp/obj/
+-L/bkup/ada/gnat2015/ravenscar-sfp-rm57/adalib/
+-static
+-static-libgcc
+/bkup/ada/gnat2015/ravenscar-sfp-rm57/adalib/libgnarl.a
+/bkup/ada/gnat2015/ravenscar-sfp-rm57/adalib/libgnat.a

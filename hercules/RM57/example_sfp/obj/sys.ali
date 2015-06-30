@@ -1,0 +1,46 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-sfp-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sys%b			sys.adb			c05d8c1c NE OO PK
+W sys%s			sys.adb			sys.ali
+W sys.mux%s		sys-mux.adb		sys-mux.ali
+W sys.periph%s		sys-periph.adb		sys-periph.ali
+
+U sys%s			sys.ads			07cdead7 NE OO PR PK
+
+D accessor.ads		20150626225208 649ed506 accessor%s
+D interfac.ads		20150626224946 6033a23f interfaces%s
+D sys.ads		20150630181455 07cdead7 sys%s
+D sys.adb		20150630181452 c722e96a sys%b
+D sys-mux.ads		20150630181453 90edd343 sys.mux%s
+D sys-periph.ads	20150630181452 905f5ce2 sys.periph%s
+D system.ads		20150627012817 aa6d6fbd system%s
+D s-rm57.ads		20150626225209 52998bfe system.rm57%s
+D s-stoele.ads		20150626224948 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150626224944 9d58a4c0 system.unsigned_types%s
+X 3 sys.ads
+1K9*Sys 4l5 4e8 4|1r6 1r24 2r6 2r24 3b14 9l5 9t8
+3U14*Sys_Init 4|4b14 8t7
+X 5 sys-mux.ads
+32K13*Mux 4|2w10 2r28 5|44e12
+42U14*Mux_Init 4|7s7
+X 6 sys-periph.ads
+32K13*Periph 4|1w10 1r28 6|41e15
+39U14*Periph_Init 4|6s7
+

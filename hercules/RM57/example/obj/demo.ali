@@ -1,0 +1,88 @@
+V "GNAT Lib v2015"
+M P 0 W=b
+A --RTS=/bkup/ada/gnat2015/ravenscar-full-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB LC TF  ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U demo%b		demo.adb		1b52aab4 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W driver%s		driver.adb		driver.ali
+W init%s		init.adb		init.ali
+W last_chance_handler%s	last_chance_handler.adb	last_chance_handler.ali
+W system%s		system.ads		system.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+
+D ada.ads		20150623182637 3ffc8e18 ada%s
+D a-except.ads		20150623182624 5250cb69 ada.exceptions%s
+D a-textio.ads		20150623182610 ffc84532 ada.text_io%s
+D a-unccon.ads		20150623182641 f9eb8f06 ada.unchecked_conversion%s
+D demo.adb		20150630181815 a542bbac demo%b
+D driver.ads		20150630174514 f916de1f driver%s
+D init.ads		20150630174514 188324c4 init%s
+D last_chance_handler.ads  20150630174514 da51f004 last_chance_handler%s
+D system.ads		20150623182822 7a1c5ef5 system%s
+D s-bb.ads		20150623182622 883768d6 system.bb%s
+D s-bbbosu.ads		20150623182634 3f67a4b3 system.bb.board_support%s
+D s-bbcppr.ads		20150623182622 37229a46 system.bb.cpu_primitives%s
+D s-bcprmu.ads		20150623182621 b5ec9aa9 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20150623182642 4743e2d6 system.bb.interrupts%s
+D s-bbpara.ads		20150626020700 c9e724e1 system.bb.parameters%s
+D s-bbthre.ads		20150623182629 d71e350d system.bb.threads%s
+D s-bbthqu.ads		20150623182606 6e3d132d system.bb.threads.queues%s
+D s-bbtime.ads		20150623182634 2fd6b2f5 system.bb.time%s
+D s-imgint.ads		20150623182608 02dbe0c2 system.img_int%s
+D s-multip.ads		20150623182645 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20150623182601 9761d940 system.os_interface%s
+D s-parame.ads		20150623182643 c9fe535f system.parameters%s
+D s-stalib.ads		20150623182613 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150623182638 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150623182638 801abd01 system.task_info%s
+D s-taspri.ads		20150623182607 351848fa system.task_primitives%s
+D s-taskin.ads		20150623182608 8fe6fc8a system.tasking%s
+D s-tasres.ads		20150623182640 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20150623182646 128b2dbd system.tasking.restricted.stages%s
+D s-traent.ads		20150623182623 005bf670 system.traceback_entries%s
+X 1 ada.ads
+16K9*Ada 19e8 5|38r6 38r32
+X 3 a-textio.ads
+36K13*Text_IO 52e16 5|38w10 38r36
+46U14*Put_Line 5|45s7
+X 5 demo.adb
+40U11*Demo 40b11 49l5 49t9
+42i4 Counter{integer} 45r47 46m7 46r18
+X 6 driver.ads
+33K9*Driver 5|35w6 35r49 6|45e11
+X 7 init.ads
+3K9*Init 5|36w6 36r49 7|6e9
+4U14*Rm57_Init 5i<c,rm57_init>22
+X 8 last_chance_handler.ads
+37K9*Last_Chance_Handler 5|30w6 30r49 8|43e24
+39U14*Last_Chance_Handler 40i<c,__gnat_last_chance_handler>22
+X 9 system.ads
+45K9*System 5|37w6 41r21 9|158e11
+75M9*Address
+111I12*Any_Priority{integer}
+112I12*Priority{111I12} 5|41r28
+X 27 s-taskin.ads
+389V13*Get_Sec_Stack{9|75M9} 390i<c,__gnat_get_secondary_stack>22
+444U14*Initialize_Slave 445i24
+X 29 s-tarest.ads
+221U14*Activate_All_Tasks_Sequential 222i<c,__gnat_activate_all_tasks>22
+

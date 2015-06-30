@@ -1,0 +1,68 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-sfp-rm46/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U sys.periph%b		sys-periph.adb		ca409a85 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W sys%s			sys.adb			sys.ali
+
+U sys.periph%s		sys-periph.ads		4ccff17c NE OO PR PK
+W accessor%s		accessor.adb		accessor.ali
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+W system.rm46%s		s-rm46.ads		s-rm46.ali
+
+D accessor.ads		20150619214043 024fab8d accessor%s
+D interfac.ads		20150619214043 6033a23f interfaces%s
+D sys.ads		20150630175815 07cdead7 sys%s
+D sys-periph.ads	20150630175815 c853c98b sys.periph%s
+D sys-periph.adb	20150630175815 6220f131 sys.periph%b
+D system.ads		20150619222736 aa6d6fbd system%s
+D s-rm46.ads		20150619214043 811e79ad system.rm46%s
+D s-stoele.ads		20150619214043 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150619214043 9d58a4c0 system.unsigned_types%s
+X 1 accessor.ads
+6K9*Accessor 24e13 4|30w6 30r20
+12R9*HiLo 15e14 4|35r22 36r22 37r22
+17U14*Rmw 5|43s7 44s7 45s7 46s7
+21U14*Rmw 5|38s7 49s7
+X 2 interfac.ads
+38K9*Interfaces 178e15 5|31w6 31r22
+X 3 sys.ads
+1K9*Sys 4e8 4|32r9 41r5 5|33r14 52r5
+X 4 sys-periph.ads
+32K13*Periph 3|1k9 4|41l9 41e15 5|33b18 52l9 52t15
+35r4*PENA{1|12R9} 5|38r26 49r26
+36r4*VCLKR{1|12R9}
+37r4*VCLKR2{1|12R9}
+39U14*Periph_Init 5|35b14 51t7
+X 6 system.ads
+60K9*System 4|28r6 28r23 6|179e11
+X 7 s-rm46.ads
+34K16*RM46 4|28w13 28r30 7|424e16
+38M9*Word
+163m7*CLKCNTL{38M9} 5|38m17 49m17
+176r4*SMF1{110R9} 5|38m12 38r12 49m12 49r12
+291m7*PSPWRDWNCLR0{38M9} 5|43m16
+292m7*PSPWRDWNCLR1{38M9} 5|44m16
+293m7*PSPWRDWNCLR2{38M9} 5|45m16
+294m7*PSPWRDWNCLR3{38M9} 5|46m16
+297r4*PCR{250R9} 5|43m12 43r12 44m12 44r12 45m12 45r12 46m12 46r12
+

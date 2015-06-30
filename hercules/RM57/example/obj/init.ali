@@ -1,0 +1,63 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-full-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB ZX
+
+RN
+RR NO_EXCEPTION_PROPAGATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV SPARK_05
+
+U init%b		init.adb		9c512d98 NE OO PK
+W gioports%s		gioports.adb		gioports.ali
+W sys%s			sys.adb			sys.ali
+W sys.flash%s		sys-flash.adb		sys-flash.ali
+W sys.pll%s		sys-pll.adb		sys-pll.ali
+W sys.vim%s		sys-vim.adb		sys-vim.ali
+
+U init%s		init.ads		188324c4 EE NE OO PK
+
+D accessor.ads		20150623183815 649ed506 accessor%s
+D gioports.ads		20150630174514 9f5c0190 gioports%s
+D init.ads		20150630174514 188324c4 init%s
+D init.adb		20150630174514 3108280e init%b
+D interfac.ads		20150623182621 6033a23f interfaces%s
+D sys.ads		20150630174514 07cdead7 sys%s
+D sys-flash.ads		20150630174514 9ae39a26 sys.flash%s
+D sys-pll.ads		20150630174514 b90f1152 sys.pll%s
+D sys-vim.ads		20150630174514 0ea74161 sys.vim%s
+D system.ads		20150623182822 7a1c5ef5 system%s
+D s-rm57.ads		20150625011810 52998bfe system.rm57%s
+D s-stoele.ads		20150623182638 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150623182606 9d58a4c0 system.unsigned_types%s
+X 2 gioports.ads
+31K9*GioPorts 48e13 4|1w6 1r25
+45U14*GioInit 4|14s7
+X 3 init.ads
+3K9*Init 6l5 6e9 4|6b14 16l5 16t9
+4U14*Rm57_Init 5i<c,rm57_init>22 4|7b14 15l8 15t17
+X 6 sys.ads
+1K9*Sys 4|2w6 2r25 3r6 3r25 4r6 4r25 5r6 5r25 6|4e8
+3U14*Sys_Init 4|13s7
+X 7 sys-flash.ads
+4K13*Flash 4|4w10 4r29 7|71e14
+69U14*Flash_Init 4|11s7
+X 8 sys-pll.ads
+5K13*Pll 4|3w10 3r29 8|16e12
+11U14*Initialize_Clocks 4|10s7
+12U14*Pll_Spinup 4|12s7
+X 9 sys-vim.ads
+31K13*Vim 4|5w10 5r29 9|40e12
+38U14*vim_Init 4|9s7
+

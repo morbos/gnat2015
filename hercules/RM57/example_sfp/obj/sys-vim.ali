@@ -1,0 +1,63 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-sfp-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U sys.vim%b		sys-vim.adb		e3b58255 NE OO PK
+W accessor%s		accessor.adb		accessor.ali
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+
+U sys.vim%s		sys-vim.ads		5bf32048 NE OO PK
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+W system.rm57%s		s-rm57.ads		s-rm57.ali
+
+D accessor.ads		20150626225208 649ed506 accessor%s
+D interfac.ads		20150626224946 6033a23f interfaces%s
+D sys.ads		20150630181455 07cdead7 sys%s
+D sys-vim.ads		20150630181455 0ea74161 sys.vim%s
+D sys-vim.adb		20150630181455 898c1632 sys.vim%b
+D system.ads		20150627012817 aa6d6fbd system%s
+D s-rm57.ads		20150626225209 52998bfe system.rm57%s
+D s-stoele.ads		20150626224948 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150626224944 9d58a4c0 system.unsigned_types%s
+X 1 accessor.ads
+6K9*Accessor 24e13 5|31w6 31r20
+17U14*Rmw 5|38s7
+X 3 sys.ads
+1K9*Sys 4e8 4|31r9 40r5 5|33r14 45r5
+X 4 sys-vim.ads
+31K13*Vim 3|1k9 4|40l9 40e12 5|33b18 45l9 45t12
+33A9*VIM_RAM_Block(7|38M9)<integer> 35r21 5|40r16
+35a4*VIM_RAM_BlockP{33A9} 5|41m10
+38U14*vim_Init 5|35b14 44t7
+X 5 sys-vim.adb
+40i11 I{integer} 41r26
+X 6 system.ads
+60K9*System 4|28r6 28r23 36r9 6|179e11
+87M9*Address 4|36r9
+X 7 s-rm57.ads
+34K16*RM57 4|28w13 28r30 7|438e16
+38M9*Word 4|33r46
+92N4*VIM_RAM_Base 4|36r28
+380m7*ECCCTL{38M9} 5|38m23
+386r4*VIM_Parity{377R9} 5|38m12 38r12
+

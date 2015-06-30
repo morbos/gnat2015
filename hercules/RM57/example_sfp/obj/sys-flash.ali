@@ -1,0 +1,120 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-sfp-rm57/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U sys.flash%b		sys-flash.adb		69287125 NE OO PK
+W accessor%s		accessor.adb		accessor.ali
+W interfaces%s		interfac.ads		interfac.ali
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+
+U sys.flash%s		sys-flash.ads		cfb7fb0f EE OO PR PK
+W sys%s			sys.adb			sys.ali
+W system%s		system.ads		system.ali
+W system.rm57%s		s-rm57.ads		s-rm57.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D accessor.ads		20150626225208 649ed506 accessor%s
+D interfac.ads		20150626224946 6033a23f interfaces%s
+D sys.ads		20150630181455 07cdead7 sys%s
+D sys-flash.ads		20150630181454 9ae39a26 sys.flash%s
+D sys-flash.adb		20150630181452 f7669c3a sys.flash%b
+D system.ads		20150627012817 aa6d6fbd system%s
+D s-rm57.ads		20150626225209 52998bfe system.rm57%s
+D s-stoele.ads		20150626224948 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150626224944 9d58a4c0 system.unsigned_types%s
+X 1 accessor.ads
+6K9*Accessor 24e13 5|2w6 2r22
+17U14*Rmw 5|8s7 10s7 12s7 14s7 16s7
+X 2 interfac.ads
+38K9*Interfaces 178e15 5|1w6 1r22
+68M9*Unsigned_32
+115V13*Shift_Left{68M9} 5|16s36 16s57
+X 3 sys.ads
+1K9*Sys 4e8 4|4r9 71r5 5|4r14 20r5
+X 4 sys-flash.ads
+4K13*Flash 3|1k9 4|71l9 71e14 5|4b18 20l9 20t14
+9A9*Rsvd_Flash2(7|38M9)<integer> 20r27
+10A9*Rsvd_Flash7(7|38M9)<integer> 47r27
+11A9*Rsvd_Flash9(7|38M9)<integer> 52r27
+12A9*Rsvd_Flash10(7|38M9)<integer> 55r27
+13A9*Rsvd_Flash11(7|38M9)<integer> 57r27
+14A9*Rsvd_Flash13(7|38M9)<integer> 62r27
+16R9*Flash_Registers 64e14 66r12
+17m7*FRDCNTL{7|38M9} 5|8m18
+18m7*RESERVED1{7|38M9}
+19m7*EE_FEDACCTRL1{7|38M9}
+20a7*Reserved2{9A9}
+21m7*FEDAC_PASTATUS{7|38M9}
+22m7*FEDAC_PBSTATUS{7|38M9}
+23m7*FEDAC_GBLSTATUS{7|38M9}
+24m7*RESERVED3{7|38M9}
+25m7*FEDACSDIS{7|38M9}
+26m7*FPRIM_ADD_TAG{7|38M9}
+27m7*FDUP_ADD_TAG{7|38M9}
+28m7*FBPROT{7|38M9}
+29m7*FBSE{7|38M9}
+30m7*FBBUSY{7|38M9}
+31m7*FBAC{7|38M9}
+32m7*FBPWRMODE{7|38M9} 5|16m18
+33m7*FBPRDY{7|38M9}
+34m7*FPAC1{7|38M9}
+35m7*RESERVED4{7|38M9}
+36m7*FMAC{7|38M9}
+37m7*FMSTAT{7|38M9}
+38m7*FEMU_DMSW{7|38M9}
+39m7*FEMU_DLSW{7|38M9}
+40m7*FEMU_ECC{7|38M9}
+41m7*FLOCK{7|38M9}
+42m7*FDIAGCTRL{7|38M9}
+43m7*RESERVED5{7|38M9}
+44m7*FRAW_ADDR{7|38M9}
+45m7*RESERVED6{7|38M9}
+46m7*FPAR_OVR{7|38M9}
+47a7*Reserved7{10A9}
+48m7*RCR_VALID{7|38M9}
+49m7*ACC_THRESHOLD{7|38M9}
+50m7*RESERVED8{7|38M9}
+51m7*FEDACSDIS2{7|38M9}
+52a7*Reserved9{11A9}
+53m7*RCR_VALUE0{7|38M9}
+54m7*RCR_VALUE1{7|38M9}
+55a7*Reserved10{12A9}
+56m7*FSM_WR_ENA{7|38M9} 5|10m18 14m18
+57a7*Reserved11{13A9}
+58m7*EEPROM_CONFIG{7|38M9} 5|12m18
+59m7*RESERVED12{7|38M9}
+60m7*FSM_SECTOR1{7|38M9}
+61m7*FSM_SECTOR2{7|38M9}
+62a7*Reserved13{14A9}
+63m7*FCFG_BANK{7|38M9}
+66r4*FLASH{16R9} 5|8m12 8r12 10m12 10r12 12m12 12r12 14m12 14r12 16m12 16r12
+69U14*Flash_Init 5|6b14 18l8 18t18
+X 6 system.ads
+60K9*System 4|2r6 2r23 67r9 6|179e11
+87M9*Address 4|67r9
+X 7 s-rm57.ads
+34K16*RM57 4|2w13 2r30 7|438e16
+38M9*Word 4|9r42 10r43 11r42 12r45 13r44 14r44 17r27 18r27 19r27 21r27 22r27
+. 23r27 24r27 25r27 26r27 27r27 28r27 29r27 30r27 31r27 32r27 33r27 34r27
+. 35r27 36r27 37r27 38r27 39r27 40r27 41r27 42r27 43r27 44r27 45r27 46r27
+. 48r27 49r27 50r27 51r27 53r27 54r27 56r27 58r27 59r27 60r27 61r27 63r27
+94N4*Flash_Wrapper_Base 4|67r28
+

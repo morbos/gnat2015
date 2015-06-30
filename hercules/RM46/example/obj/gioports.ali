@@ -1,0 +1,82 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-full-rm46/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U gioports%b		gioports.adb		839cb425 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+
+U gioports%s		gioports.ads		2c377f10 NE OO PK
+W accessor%s		accessor.adb		accessor.ali
+W system%s		system.ads		system.ali
+W system.rm46%s		s-rm46.ads		s-rm46.ali
+
+D accessor.ads		20150620002250 024fab8d accessor%s
+D gioports.ads		20150630174514 af66ad30 gioports%s
+D gioports.adb		20150630174514 2cfa1915 gioports%b
+D interfac.ads		20150619213556 6033a23f interfaces%s
+D system.ads		20150620003305 7a1c5ef5 system%s
+D s-rm46.ads		20150620002250 811e79ad system.rm46%s
+D s-stoele.ads		20150619213556 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20150619213556 9d58a4c0 system.unsigned_types%s
+X 1 accessor.ads
+6K9*Accessor 24e13 2|30w6 30r27
+9I12*Bits32{natural} 2|46r48 3|53r48
+12R9*HiLo 15e14 2|34r28 35r28 36r28 37r28 40r28 41r28 42r28 43r28
+17U14*Rmw 3|36s7 41s10 42s10 43s10 44s10 45s10 49s7 56s7
+21U14*Rmw 3|37s7 38s7
+X 2 gioports.ads
+31K9*GioPorts 48l5 48e13 3|31b14 62l5 62t13
+34r4*GIOENACLR0{1|12R9} 3|37r27
+35r4*GIOENACLR1{1|12R9}
+36r4*GIOENACLR2{1|12R9}
+37r4*GIOENACLR3{1|12R9}
+40r4*GIOLVLCLR0{1|12R9} 3|38r27
+41r4*GIOLVLCLR1{1|12R9}
+42r4*GIOLVLCLR2{1|12R9}
+43r4*GIOLVLCLR3{1|12R9}
+45U14*GioInit 3|33b14 51t7
+46U14*GioSetBit 46>24 46>42 46>56 3|53b14 60t7
+46e24 Port{6|337E9} 3|53b24 56r20
+46i42 Bit{1|9I12} 3|53b42 56r35 56r40
+46b56 Value{boolean} 3|53b56 56r49
+X 3 gioports.adb
+40e11 I{6|337E9} 41r23 42r23 43r23 44r23 45r23
+X 5 system.ads
+45K9*System 2|28r6 28r27 5|158e11
+X 6 s-rm46.ads
+34K16*RM46 2|28w13 28r34 6|424e16
+38M9*Word
+327m7*GIODIR{38M9} 3|42m26 49m27
+329m7*GIODOUT{38M9} 3|41m26 56m26
+332m7*GIOPDR{38M9} 3|43m26
+333m7*GIOPULDIS{38M9} 3|45m26
+334m7*GIOPSL{38M9} 3|44m26
+337E9*GIO_Range 2|46r31 3|53r31 6|337e36
+337n30*GIO_B{337E9} 3|49r20
+341A9*GIO_Block(326R9)<337E9>
+344m7*GIOGCR0{38M9} 3|36m16
+349m7*GIOENACLR{38M9} 3|37m16
+351m7*GIOLVLCLR{38M9} 3|38m16
+357a7*GIOx{341A9} 3|40r20 41m18 42m18 43m18 44m18 45m18 49m15 56m15
+360r4*GIO{343R9} 3|36m12 36r12 37m12 37r12 38m12 38r12 40r16 41m14 41r14
+. 42m14 42r14 43m14 43r14 44m14 44r14 45m14 45r14 49m11 49r11 56m11 56r11
+

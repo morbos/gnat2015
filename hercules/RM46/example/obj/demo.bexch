@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__demo.o
+[PROJECT FILES]
+/rnasbkup/gnat2015/hercules/RM46/example/example.gpr
+20150630174514
+[BOUND OBJECT FILES]
+/rnasbkup/gnat2015/hercules/RM46/example/obj/sys-mux.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/sys-periph.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/sys.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/sys-pll.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/gioports.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/driver.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/init.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/last_chance_handler.o
+/rnasbkup/gnat2015/hercules/RM46/example/obj/demo.o
+[GENERATED SOURCE FILES]
+b__demo.ads
+b__demo.adb
+b__demo.ali
+[RESULTING OPTIONS]
+-L/rnasbkup/gnat2015/hercules/RM46/example/obj/
+-L/rnasbkup/gnat2015/hercules/RM46/example/obj/
+-L/bkup/ada/gnat2015/ravenscar-full-rm46/adalib/

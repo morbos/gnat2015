@@ -1,0 +1,38 @@
+V "GNAT Lib v2015"
+A --RTS=/bkup/ada/gnat2015/ravenscar-full-rm46/
+A -gnatA
+A -mlittle-endian
+A -mfpu=vfpv3-d16
+A -mfloat-abi=hard
+A -mcpu=cortex-r4
+A -g
+A -g
+A -gnatwa
+A -gnatQ
+A -gnat12
+A -mthumb
+P DB ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U last_chance_handler%b	last_chance_handler.adb	b8e4440a NE OO PK
+
+U last_chance_handler%s	last_chance_handler.ads	a04daef1 EE NE OO PK
+W system%s		system.ads		system.ali
+
+D last_chance_handler.ads  20150630174514 da51f004 last_chance_handler%s
+D last_chance_handler.adb  20150630174514 62b5b40e last_chance_handler%b
+D system.ads		20150620003305 7a1c5ef5 system%s
+X 1 last_chance_handler.ads
+37K9*Last_Chance_Handler 43l5 43e24 2|28b14 43l5 43t24
+39U14*Last_Chance_Handler 39>35 39>57 40i<c,__gnat_last_chance_handler>22
+. 41r22 2|34b14 41l8 41t27
+39m35 Msg{3|75M9} 2|34b35 35r28
+39i57 Line{integer} 2|34b57 35r33
+X 2 last_chance_handler.adb
+39l9 spin
+X 3 system.ads
+45K9*System 1|35w6 39r41 2|34r41 3|158e11
+75M9*Address 1|39r48 2|34r48
+
