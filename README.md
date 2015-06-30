@@ -3,14 +3,19 @@
 
 0) This tree contains the gnat2015 full and sfp ravenscar libs ported
 to the Hercules RM46 and RM57 processors.
+
 1) The code is specifically targeted to the 2 launchpad boards for
 both the devices.
+
 2) For each devices, there is an example that has 2 tasks that each
 toggle and LED and an overall loop that prints at 115200 8N1 to the
 LIN1 UART port.
+
 3) To build this, first go to libre.adacore.com and DL gnat2015 tools
 for ARM (choose your host, Windows or Linux).
+
 4) Add the bin dir to your path.
+
 5) Build the lib of interest: (example here is rm57, similar for rm46)
 
 % cd gnat2015/ravenscar-full-rm57
@@ -34,19 +39,25 @@ There will be a build.out that UniFlash can program.
 toggling).
 
 8) GDB and beyond.
+
 If you want to source level debug, 
 a) acquire a pod, I use a JLINK clone for $10-$15 on ebay. 
 b) DL openocd 0.9 
+
 c) prepare your board for JTAG debug. You will need a Samtec
 connector soldered down:
+
 ftr-110-51-s-d-06
+
 d) A JTAG adaper is needed. JLINK official sells these, they
 convert ARM20 to CTI-20.
 
 https://www.segger.com/jlink-adapters.html#TI20
 
 e) DL openocd 0.9
+
 f) Use the openocd target and board files provided.
+
 g) You should be able to start openocd and see the target
 
 openocd --file ti_rm57launchpad.cfg
